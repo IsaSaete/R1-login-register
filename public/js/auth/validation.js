@@ -1,13 +1,13 @@
 export const isValidUsername = (username) => {
-  const minimunCharactersUsername = 5;
-  let isValid = username.length >= minimunCharactersUsername;
+  const usernameMinimumLength = 5;
+  let isValid = username.length >= usernameMinimumLength;
 
   return isValid;
 };
 
 export const isValidPassword = (password) => {
-  const minimunCharactersPassword = 8;
-  const isValidPasswordLength = password.length >= minimunCharactersPassword;
+  const passwordMinimumLentgth = 8;
+  const isValidPasswordLength = password.length >= passwordMinimumLentgth;
   const hasPasswordNumber = /\d/.test(password);
   const hasPasswordUppercase = /[A-ZÁÉÍÓÚÑáéíóúñÀÈÌÒÙ]/.test(password);
   let isValid =
